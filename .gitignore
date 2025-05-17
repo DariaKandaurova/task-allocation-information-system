@@ -1,0 +1,6 @@
+vkr_back/venv
+vkr_front/node_modules
+vkr_back/.env
+vkr_back/attachments
+*.DS_Store
+*__pycache__

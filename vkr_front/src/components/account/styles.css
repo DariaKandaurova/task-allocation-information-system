@@ -1,0 +1,59 @@
+.account-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f6ce45;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.account-page h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.account-details {
+    margin-bottom: 30px;
+}
+
+.account-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
+
+.logout-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #6d6866;
+    color: #fff;
+    border: 2px solid rgba(40, 44, 52, 0.25);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logout-button:hover {
+    background-color: #ff7875;
+}
+
+.back-button-account {
+    background-color: #6d6866;
+    border: 1px solid rgba(40, 44, 52, 0.25);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-button-account:hover {
+    background-color: rgba(64, 101, 69, 0.68);
+}

@@ -1,0 +1,244 @@
+.app-header-admin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #6d6866;
+    padding: 10px 20px 10px 165px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.3);
+}
+
+.admin-page {
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+}
+
+.back-button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tab-buttons button {
+    padding: 8px 16px;
+    background-color: #f6ce45;
+    color: #000000;
+    border: 1px solid #6d6866;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.tab-buttons button.active {
+    background-color: rgba(246, 206, 69, 0.68);
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.create-exist-user-button {
+    padding: 8px 16px;
+    background-color: #6d6866;
+    color: #f5f5f5;
+    border: 1px solid #6d6866;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-exist-user-button:hover {
+    background-color: #6d6866;
+    color: #f5f5f5;
+    transform: scale(1.03);
+}
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.top-panel input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-user-button {
+    padding: 8px 16px;
+    background-color: #f6ce45;
+    color: #000000;
+    border: 1px solid #6d6866;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+}
+
+.new-user-button:hover {
+    background-color: rgba(246, 206, 69, 0.79);
+    transform: scale(1.01);
+}
+
+.create-user-button {
+    padding: 8px 16px;
+    background-color: #f6ce45;
+    color: #000000;
+    border: 1px solid #6d6866;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+}
+
+.create-user-button:hover {
+    background-color: rgba(246, 206, 69, 0.79);
+    transform: scale(1.01);
+}
+
+.change-role-button {
+    padding: 8px 12px;
+    background-color: rgb(255, 210, 104);
+    color: black;
+    border: 1px solid #6d6866;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 4px rgba(45, 45, 45, 0.03);
+}
+
+.change-role-button:hover {
+    background-color: rgb(255, 196, 6);
+}
+
+.delete-user-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: rgb(224, 141, 141);
+    border: 1px solid #6d6866;
+    color: BLACK;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 4px rgba(45, 45, 45, 0.03);
+}
+
+.delete-user-button:hover {
+    background-color: rgb(222, 94, 94);
+}
+
+.table-section {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.table-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+    border-radius: 10px;
+}
+
+.table-section th,
+.table-section td {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(45, 45, 45, 0.03);
+
+}
+
+.table-section th {
+    background-color: #f2f2f2;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.role {
+    padding: 8px;
+    text-align: left;
+    color: #4d4948;
+    border: 1px solid #6d6866;
+    border-radius: 2px;
+}
+
+

@@ -1,0 +1,315 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f6ce45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+.formGroupLabel {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.formGroupInput {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: end;
+    margin-top: 2px;
+
+}
+
+.secondaryBtn {
+    /*width: 80px;*/
+    height: 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secondaryBtn:hover {
+    background-color: #5a6268;
+}
+
+.button {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 100px;
+    height: 40px;
+    background-color: #6d6866;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(45, 45, 45, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f6ce45;
+    color: #6d6866;
+    transform: scale(1.05);
+}
+
+.h2 {
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.errorInput {
+    border: 1px solid red;
+}
+
+.errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.errorMessage {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.passwordWrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.loginWrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.formGroupInput {
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 25px;
+    padding-right: 10px;
+}
+
+.showPasswordBtn {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showPasswordBtn svg {
+    width: 24px;
+    height: 24px;
+    stroke: #000;
+}
+
+.eyeIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.errorBorder {
+    border: 2px solid red;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.serverError {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.setModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    animation: setFadeIn 0.3s ease-in-out;
+}
+
+.setModalContent {
+    width: 100%;
+    top: 100px;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    animation: setSlideDown 0.4s ease-in-out;
+}
+
+@keyframes setFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes setSlideDown {
+    from { transform: translateY(-30px); }
+    to { transform: translateY(0); }
+}
+
+.setH2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.setCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.setFormGroup {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.setFormGroupLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #0056b3;
+}
+
+.setFormGroupInput {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.setFormGroupInput:focus {
+    border-color: #0056b3;
+}
+
+.setSettingsRow {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.setSettingsRow .setFormGroup {
+    flex: 1;
+}
+
+.setDynamicField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.setDynamicField input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.setDynamicField button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.setButtonRow {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.setPrimaryBtn {
+    width: 140px;
+    height: 45px;
+    background-color: #383c40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.setPrimaryBtn:hover {
+    background-color: #0056b3;
+}
+
+.setSecondaryBtn {
+    width: 140px;
+    height: 45px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.setSecondaryBtn:hover {
+    background-color: #5a6268;
+}
+
